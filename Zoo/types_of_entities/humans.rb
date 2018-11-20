@@ -8,10 +8,8 @@ module Humans
 
       def eating
         puts 'Please only eat in the designated areas.'
-
       end
       def foodspecials
-
         puts 'Vistors and Staff are able to get free water and snacks if they agree to feature in our film'
       end
   end
@@ -22,8 +20,10 @@ module Humans
       end
   end
   class Nonuniform < CommonTraitsHumans
-      def dresscode
+    def self.dresscode
         puts 'Vistors dress is down to their discretion. However, please do not wear yellow, the Monkeys may think your a bannana'
     end
   end
+
+  Nonuniform.dresscode
 end
